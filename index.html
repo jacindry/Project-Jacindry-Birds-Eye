@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Care For Artificial EYE - Providing quality eye care services"
+    />
+    <meta
+      name="keywords"
+      content="artificial eye, eye care, ophthalmology"
+    />
+    <meta
+      name="author"
+      content="Dr. Moinul Hoque"
+    />
+    <title>Artificial Eye Care</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="style/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style/aos.css"
+    />
+    <!-- CSS file -->
+    <link
+      rel="stylesheet"
+      href="style/style.css"
+    />
+  </head>
+  <body>
+    <!-- PageLoader -->
+    <div class="pageloader"></div>
+
+    <!-- Header Start -->
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-space-between align-items-center">
+          <div class="logo">
+            <a href="#"
+              ><img
+                src="images/logo.png"
+                alt="Logo"
+            /></a>
+          </div>
+          <button
+            type="button"
+            class="nav-toggler"
+          >
+            <span></span>
+          </button>
+          <!-- Shortcut in Emmet
+          nav.nav>ul>li.nav-item*6>a{$} -->
+          <nav class="nav">
+            <ul>
+              <li class="nav-item"><a href="#home">Home</a></li>
+              <li class="nav-item"><a href="#about">About</a></li>
+              <li class="nav-item"><a href="#our-menu">Menu</a></li>
+              <li class="nav-item"><a href="#testimonial">Testimonial</a></li>
+              <li class="nav-item"><a href="#team">Team</a></li>
+              <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <section
+      class="home-section"
+      id="home"
+    >
+      <div class="home-bg"></div>
+      <div class="container">
+        <div class="row min-vh-100 align-items-center">
+          <div
+            class="home-text"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h1>Dine Out Resturant</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Reiciendis dolorum quae error facere accusamus repudiandae ad
+              officiis iste placeat, cumque eveniet ipsum eaque nulla doloremque
+              consequuntur sint odit earum reprehenderit?
+            </p>
+            <a
+              href="#our-menu"
+              class="btn btn-default"
+              >Our Menu</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section Start-->
+    <section
+      class="about-section sec-padding"
+      id="about"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2
+              data-title="Our Story"
+              data-aos="fade-up"
+            >
+              About Us
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="about-text"
+            data-aos="fade-right"
+          >
+            <h3>Welcome To Dine Out</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              vero facilis expedita nobis hic aliquam iste iusto dolores quia
+              illo, saepe culpa dicta architecto doloribus provident harum earum
+              eligendi officia reiciendis. Placeat nihil sequi expedita earum
+              quisquam eum, eius numquam aut distinctio dolorum, officia ipsum
+              nesciunt ut consequatur?
+            </p>
+            <p>
+              Vero alias facere, voluptate officiis sunt temporibus obcaecati
+              dolores nesciunt quaerat blanditiis repudiandae optio ipsam labore
+              ratione dolorem quos ad commodi ipsum, saepe ab laborum assumenda
+              mollitia eius. Assumenda nisi ipsum corporis tempore hic.
+            </p>
+            <a
+              href="#our-menu"
+              class="btn btn-default"
+              >Check Our Menu</a
+            >
+          </div>
+          <div
+            class="about-img"
+            data-aos="fade-left"
+          >
+            <div class="img-box">
+              <h3>20+ years experiences</h3>
+              <img
+                src="images/about-img.jpg"
+                alt="About Images"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section
+      class="menu-section sec-padding"
+      id="our-menu"
+    >
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-title"
+            data-aos="fade-up"
+          >
+            <h2 data-title="Order Now">Our Menu</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="menu-tabs"
+            data-aos="fade-up"
+          >
+            <button
+              type="button"
+              class="menu-tab-item active"
+              data-target="#lunch"
+            >
+              Lunch
+            </button>
+            <button
+              type="button"
+              class="menu-tab-item"
+              data-target="#dinner"
+            >
+              Dinner
+            </button>
+            <button
+              type="button"
+              class="menu-tab-item"
+              data-target="#drink"
+            >
+              Drink
+            </button>
+            <button
+              type="button"
+              class="menu-tab-item"
+              data-target="#desert"
+            >
+              Deserts
+            </button>
+          </div>
+        </div>
+
+        <!-- Row Menu Tab -->
+        <div
+          class="row menu-tab-content active"
+          data-aos="fade-up-right"
+          id="lunch"
+        >
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img
+                src="images/menu/1.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Lunch Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/2.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Lunch Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/3.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Lunch Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/4.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Lunch Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/5.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Lunch Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/6.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Lunch Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/7.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Lunch Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/8.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Lunch Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+        </div>
+        <!-- Lunch Menu End -->
+
+        <!-- Dinner Menu Start -->
+        <div
+          class="row menu-tab-content"
+          id="dinner"
+        >
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/1.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Dinner Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/2.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Dinner Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/3.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Dinner Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/4.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Dinner Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+        </div>
+        <!-- Dinner Menu End -->
+
+        <!-- Drink Menu Start -->
+        <div
+          class="row menu-tab-content"
+          id="drink"
+        >
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/1.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Drink Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/2.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Drink Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+        </div>
+        <!-- Drink Menu End -->
+
+        <!-- Desert Menu Start -->
+        <div
+          class="row menu-tab-content"
+          id="desert"
+        >
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/1.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Desert Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-aos="fade-up-right"
+          >
+            <div class="menu-item-title">
+              <img
+                src="images/menu/2.jpg"
+                alt="menu item thumbnail"
+              />
+              <h3>Desert Item</h3>
+            </div>
+            <div class="menu-item-price">$40.20</div>
+          </div>
+        </div>
+        <!-- Desert Menu End -->
+      </div>
+      <!-- Container End  -->
+    </section>
+    <!-- Menu Section End -->
+
+    <!-- Testimonial Start -->
+    <section
+      class="testimonial-section sec-padding"
+      id="testimonial"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2
+              data-title="Testimonial"
+              data-aos="fade-up"
+            >
+              Some Feedbacks
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="testi-item"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
+            <div class="testi-author">
+              <div class="testti-author-name">
+                <h3>Elise Parkine</h3>
+                <span>Food Specialist</span>
+              </div>
+              <div class="testi-author-img">
+                <img
+                  src="images/testimonials/1.jpg"
+                  alt="Author Image"
+                />
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              accusantium laboriosam doloremque recusandae expedita. Dolorem
+              facilis aliquam accusamus iure consequuntur sapiente error
+              possimus ipsa nobis earum expedita, eius a nemo.
+            </p>
+            <div class="rating">
+              <!-- Font awesome shortcut "i.fas.fa-star*5" -->
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div
+            class="testi-item"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <div class="testi-author">
+              <div class="testti-author-name">
+                <h3>Anna Frank</h3>
+                <span>Blogger</span>
+              </div>
+              <div class="testi-author-img">
+                <img
+                  src="images/testimonials/2.jpg"
+                  alt="Author Image"
+                />
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              accusantium laboriosam doloremque recusandae expedita. Dolorem
+              facilis aliquam accusamus iure consequuntur sapiente error
+              possimus ipsa nobis earum expedita, eius a nemo.
+            </p>
+            <div class="rating">
+              <!-- Font awesome shortcut "i.fas.fa-star*5" -->
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div
+            class="testi-item"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+          >
+            <div class="testi-author">
+              <div class="testti-author-name">
+                <h3>Jhon Doe</h3>
+                <span>Traveler</span>
+              </div>
+              <div class="testi-author-img">
+                <img
+                  src="images/testimonials/3.jpg"
+                  alt="Author Image"
+                />
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              accusantium laboriosam doloremque recusandae expedita. Dolorem
+              facilis aliquam accusamus iure consequuntur sapiente error
+              possimus ipsa nobis earum expedita, eius a nemo.
+            </p>
+            <div class="rating">
+              <!-- Font awesome shortcut "i.fas.fa-star*5" -->
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <!-- First Author End -->
+      </div>
+    </section>
+    <!-- Testimonial End -->
+
+    <!-- Team Area Start -->
+    <section
+      class="team-section sec-padding"
+      id="team"
+    >
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-title"
+            data-aos="fade-up"
+          >
+            <h2 data-title="Team">Our Chefs</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="team-item"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
+            <img
+              src="images/team/1.jpg"
+              alt=""
+            />
+            <div class="team-item-info">
+              <h3>Oliver</h3>
+              <p>Head Chef</p>
+            </div>
+          </div>
+
+          <div
+            class="team-item"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
+            <img
+              src="images/team/2.jpg"
+              alt=""
+            />
+            <div class="team-item-info">
+              <h3>Oggy</h3>
+              <p>Assistant Chef</p>
+            </div>
+          </div>
+
+          <div
+            class="team-item"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
+            <img
+              src="images/team/3.jpg"
+              alt=""
+            />
+            <div class="team-item-info">
+              <h3>Marky</h3>
+              <p>Sub Assistant Chef</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team Area End -->
+
+    <!-- Footer Section Start-->
+    <section
+      class="footer"
+      id="contact"
+    >
+      <div class="container">
+        <div class="row">
+          <div
+            class="footer-item"
+            data-aos="fade-up"
+          >
+            <h3>Our Location</h3>
+            <p>213 Derrick Street Boston, <br />MA 02130 USA</p>
+          </div>
+          <div
+            class="footer-item"
+            data-aos="fade-up"
+          >
+            <h3>Opening Hour</h3>
+            <p>
+              Monday to Sunday <br />
+              08:00 AM to 12:01 AM
+            </p>
+          </div>
+          <div
+            class="footer-item"
+            data-aos="fade-up"
+          >
+            <h3>Contact Us</h3>
+            <p>+192 345 687</p>
+            <p>info@dineout.com</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+          data-aos="fade-up"
+        >
+          <div class="copyright">&copy; 2021 - Designed For Practice.</div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section End-->
+
+    <!-- Js file -->
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

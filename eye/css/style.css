@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --main-color: #d1d1d1;
+  --default-font-size: 1rem;
+  --h1-font-size: 22px;
+}
+
+html {
+  font-size: var(--default-font-size);
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--main-color);
+  font-size: var(--default-font-size);
+}
+
+/* Global Settings */
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+}
+/* Global Settings End*/

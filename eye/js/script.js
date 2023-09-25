@@ -2,8 +2,10 @@ window.addEventListener('load', function () {
   AOS.init();
 });
 
-const button = document.querySelector('#menu-button'); // Hamburger Icon
-const menu = document.querySelector('#menu'); // Menu
+// Hamburger Icon
+const button = document.querySelector('#menu-button'); 
+// Menu
+const menu = document.querySelector('#menu'); 
 
 button.addEventListener('click', () => {
   menu.classList.toggle('hidden');

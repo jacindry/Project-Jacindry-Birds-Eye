@@ -1,18 +1,4 @@
-@media only screen and (min-width: 768px) {
-  .parent:hover .child {
-    opacity: 1;
-    height: auto;
-    overflow: none;
-    transform: translateY(0);
-  }
-  .child {
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transform: translateY(-10%);
-  }
-}
-
+/* Carousel Design CSS */
 .carousel-open:checked + .carousel-item {
   position: static;
   opacity: 100;
@@ -37,8 +23,36 @@
   text-align: center;
   z-index: 10;
 }
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-  color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+#carousel-1:checked
+  ~ .control-1
+  ~ .carousel-indicators
+  li:nth-child(1)
+  .carousel-bullet,
+#carousel-2:checked
+  ~ .control-2
+  ~ .carousel-indicators
+  li:nth-child(2)
+  .carousel-bullet,
+#carousel-3:checked
+  ~ .control-3
+  ~ .carousel-indicators
+  li:nth-child(3)
+  .carousel-bullet {
+  color: #151515;
+}
+
+/* Navbar CSS */
+@media only screen and (min-width: 768px) {
+  .parent:hover .child {
+    opacity: 1;
+    height: auto;
+    overflow: none;
+    transform: translateY(0);
+  }
+  .child {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transform: translateY(-10%);
+  }
 }

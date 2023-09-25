@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Care For Artificial EYE - Providing quality eye care services"
+    />
+    <meta
+      name="keywords"
+      content="artificial eye, eye care, ophthalmology"
+    />
+    <meta
+      name="author"
+      content="Dr. Moinul Hoque"
+    />
+    <title>Artificial Eye Care</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="style/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style/aos.css"
+    />
+    <!-- CSS file -->
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="style/style.css"
+    />
+  </head>
+  <body class="">
+    <header class="">
+      <!-- Navbar goes here -->
+      <nav
+        class="absolute z-[999] top-0 sticky flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white shadow-lg"
+      >
+        <div class="w-10 h-10">
+          <a href="#">
+            <img
+              src="assets/images/eye_color.png"
+              alt="artificial_eye"
+            />
+          </a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <svg
+          xmlns="<http://www.w3.org/2000/svg>"
+          id="menu-button"
+          class="h-6 w-6 cursor-pointer md:hidden block"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+
+        <div
+          class="hidden w-full md:flex md:items-center md:w-auto"
+          id="menu"
+        >
+          <ul
+            class="text-base text-gray-700 pt-4 md:flex md:justify-between md:pt-0"
+          >
+            <li>
+              <a
+                class="md:p-4 py-2 block hover:text-purple-400"
+                href="#"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                class="md:p-4 py-2 block hover:text-purple-400"
+                href="#"
+                >Pricing</a
+              >
+            </li>
+            <li class="relative parent">
+              <a
+                href="#"
+                class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2"
+              >
+                <span>Service</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 fill-current pt-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
+                  />
+                </svg>
+              </a>
+              <ul
+                class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="flex px-4 py-3 hover:bg-gray-50"
+                  >
+                    Web development
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex px-4 py-3 hover:bg-gray-50"
+                  >
+                    Web Design
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex px-4 py-3 hover:bg-gray-50"
+                  >
+                    Machine Learning
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="md:p-4 py-2 block hover:text-purple-400"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
+                href="#"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Header Slider Start-->
+      <div class="carousel relative shadow-2xl bg-white">
+        <div class="carousel-inner relative overflow-hidden w-full h-[90vh]">
+          <!--Slide 1-->
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-1"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+            checked="checked"
+          />
+          <div
+            class="carousel-item absolute opacity-0"
+            style="height: 90vh"
+          >
+            <div
+              class="block h-full w-full bg-indigo-500 text-white text-5xl text-center"
+            >
+              Slide 1
+            </div>
+          </div>
+          <label
+            for="carousel-3"
+            class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+            >‹</label
+          >
+          <label
+            for="carousel-2"
+            class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+            >›</label
+          >
+
+          <!--Slide 2-->
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-2"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div
+            class="carousel-item absolute opacity-0"
+            style="height: 90vh"
+          >
+            <div
+              class="block h-full w-full bg-orange-500 text-white text-5xl text-center"
+            >
+              Slide 2
+            </div>
+          </div>
+          <label
+            for="carousel-1"
+            class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+            >‹</label
+          >
+          <label
+            for="carousel-3"
+            class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+            >›</label
+          >
+
+          <!--Slide 3-->
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-3"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div
+            class="carousel-item absolute opacity-0"
+            style="height: 90vh"
+          >
+            <div
+              class="block h-full w-full bg-green-500 text-white text-5xl text-center"
+            >
+              Slide 3
+            </div>
+          </div>
+          <label
+            for="carousel-2"
+            class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+            >‹</label
+          >
+          <label
+            for="carousel-1"
+            class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+            >›</label
+          >
+
+          <!-- Add additional indicators for each slide-->
+          <ol class="carousel-indicators">
+            <li class="inline-block mr-3">
+              <label
+                for="carousel-1"
+                class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+                >•</label
+              >
+            </li>
+            <li class="inline-block mr-3">
+              <label
+                for="carousel-2"
+                class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+                >•</label
+              >
+            </li>
+            <li class="inline-block mr-3">
+              <label
+                for="carousel-3"
+                class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+                >•</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Header Slider End-->
+    </header>
+    <main>
+      <section>
+        <div class="px-4">
+          <div
+            class="flex justify-center items-center bg-white mx-auto max-w-2xl rounded-lg my-16 p-16"
+          >
+            <h1 class="text-2xl font-medium">
+              Responsive Navbar with TailwindCSS
+            </h1>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Js Script -->
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

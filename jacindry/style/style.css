@@ -21,6 +21,8 @@ html {
 /* Common CSS */
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -37,11 +39,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem;
   background-color: #385399;
   color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 .address ul,
 .social_media ul {
   display: flex;
@@ -52,7 +55,8 @@ section {
 .address ul li,
 .social_media ul li {
   display: flex;
-  align-items: center;
+  align-items: start;
+  justify-content: space-between;
   gap: 10px;
 }
 
@@ -66,7 +70,11 @@ section {
   justify-content: space-between;
   gap: 10px;
   padding-left: 16px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: #64646f33 0px 7px 29px 0px;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background-color: white;
 }
 
 .logo img {
@@ -78,7 +86,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 25px;
 }
 
 .sub_navitems {
@@ -108,6 +116,7 @@ section {
   padding: 30px 50px;
   transition: all ease-in 0.2s;
   cursor: pointer;
+  margin-bottom: 0;
 }
 
 .appointment:hover {
@@ -115,3 +124,5 @@ section {
 }
 
 /* Header top area css end */
+
+/* Responsive Code */

@@ -36,6 +36,11 @@ function updateCarousel() {
     }
   });
 }
+// Add class 'slide-in' to the first slide's text by default
+const firstSlideText = carousel.querySelector(
+  '.carousel-slide:first-child .slider_img_text'
+);
+firstSlideText.classList.add('slide-in');
 
 // Automatic carousel slide change
 setInterval(() => {

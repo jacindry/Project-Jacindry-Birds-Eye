@@ -147,7 +147,7 @@ img {
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   color: white;
   gap: 20px;
@@ -155,7 +155,7 @@ img {
 }
 
 .slide-in {
-  animation: slideIn 4s forwards;
+  animation: slideIn 2s forwards;
 }
 
 /* Define the animation */

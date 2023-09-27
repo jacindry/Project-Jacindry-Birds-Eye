@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
 
+:root {
+  --motion-ease: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  --motion-duration: 0.3s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +25,7 @@ a {
   text-decoration: none;
 }
 
-button{
+button {
   outline: none;
 }
 
@@ -128,6 +133,7 @@ img {
 .carousel-slide {
   flex: 0 0 100%;
   position: relative;
+  overflow: hidden; /* Add this to hide overflowing content */
 }
 
 .carousel-slide img {
@@ -138,29 +144,47 @@ img {
 .slider_img_text {
   position: absolute;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   flex-direction: column;
   top: 50%;
   transform: translateY(-50%);
   color: white;
+  gap: 20px;
+  left: -100%; /* Start the text off-screen to the left */
+}
+
+.slide-in {
+  animation: slideIn 4s forwards;
+}
+
+/* Define the animation */
+@keyframes slideIn {
+  from {
+    left: -100%; /* Start position off-screen to the left */
+  }
+  to {
+    left: 10%; /* End position at 10% from the left */
+  }
 }
 
 .slider_img_text h2 {
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 700;
+  line-height: 60px;
 }
 
 .slider_img_text span {
   font-size: 20px;
 }
 
-.slider_img_text button a {
+.slider_img_text .button {
   padding: 10px 14px;
-  border-radius: 15px;
+  border-radius: 7px;
   background-color: #385399;
   color: white;
   font-size: 20px;
+  transition: all ease-in-out 0.3s;
 }
 
 .prev-btn,

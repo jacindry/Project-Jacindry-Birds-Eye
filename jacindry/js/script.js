@@ -26,6 +26,15 @@ prevBtn.addEventListener('click', () => {
 function updateCarousel() {
   const translateX = -currentIndex * 100;
   carousel.style.transform = `translateX(${translateX}%)`;
+
+  // Remove and re-add the animation class to trigger it on slide change
+  const slides = carousel.querySelectorAll('.carousel-slide');
+  slides.forEach((slide, index) => {
+    slide.querySelector('.slider_img_text').classList.remove('slide-in');
+    if (index === currentIndex) {
+      slide.querySelector('.slider_img_text').classList.add('slide-in');
+    }
+  });
 }
 
 // Automatic carousel slide change

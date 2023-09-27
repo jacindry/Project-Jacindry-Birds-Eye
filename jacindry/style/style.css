@@ -279,7 +279,7 @@ section {
 
 .title-para {
   margin: 1.5rem 0 4rem 0;
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 .about-content {
@@ -311,9 +311,26 @@ section {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  margin: 1rem 0;
+}
+
+.left-service > div > h3,
+.right-service > div > h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.left-service > div > p,
+.right-service > div > p {
+  font-size: 18px;
 }
 
 .left-service:hover,
 .right-service:hover {
   color: #23408e;
+}
+
+.left-service:hover svg,
+.right-service:hover svg {
+  fill: #23408e !important;
 }

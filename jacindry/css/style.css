@@ -560,3 +560,45 @@
 .custom_font_para {
   font-size: 20px;
 }
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .custom_font {
+    font-size: 30px;
+  }
+  .btn.btn-primary.rounded-pill.py-3.px-5.mt-3 {
+    padding: 2px 3px;
+    margin-top: 2px;
+  }
+  .header-carousel.owl-carousel-text {
+    top: 40px;
+  }
+  .owl-nav,
+  .owl-dots {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .custom_font {
+    font-size: 16px;
+  }
+  .custom_font_para {
+    font-size: 16px;
+  }
+  .btn.btn-primary.rounded-pill.py-3.px-5.mt-3 {
+    display: none;
+  }
+
+  .header-carousel .owl-nav,
+  .header-carousel .owl-dots {
+    display: none !important;
+  }
+}

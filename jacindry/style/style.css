@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+button{
+  outline: none;
+}
+
 img {
   vertical-align: middle;
 }
@@ -29,9 +33,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   /* margin-bottom: 7px; */
-  background-color: blueviolet;
+  background-color: #385399;
   color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -58,7 +62,8 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-left: 16px;
+  padding-left: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .logo img {
@@ -88,19 +93,104 @@ img {
 }
 
 .navitems li a:hover {
-  background-color: #2b32e993;
+  background-color: #23408e;
   color: #fff;
 }
 
 .appointment {
   font-size: 20px;
   font-weight: 500;
-  background: #261ab27e;
+  color: white;
+  background: #23408e;
   padding: 25px 50px;
   transition: all ease-in 0.2s;
   cursor: pointer;
 }
 
-.appointment a {
+.appointment:hover {
+  background: #02317e;
+}
+
+/* Slider CSS */
+.carousel-container {
+  max-width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slider_img_text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
   color: white;
+}
+
+.slider_img_text h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.slider_img_text span {
+  font-size: 20px;
+}
+
+.slider_img_text button a {
+  padding: 10px 14px;
+  border-radius: 15px;
+  background-color: #385399;
+  color: white;
+  font-size: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #17171777;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background: #000;
 }

@@ -334,3 +334,34 @@ section {
 .right-service:hover svg {
   fill: #23408e !important;
 }
+
+/* Service */
+.services-small {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.small-service-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+  background: #02317e;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.small-service-card:nth-child(even) {
+  background-color: #23408e;
+}
+
+.small-service-card:nth-child(even):hover {
+  background-color: #02317e;
+}
+
+.small-service-card:nth-child(odd):hover {
+  background-color: #23408e;
+}

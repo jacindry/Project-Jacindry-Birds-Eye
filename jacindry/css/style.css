@@ -602,3 +602,8 @@
     display: none !important;
   }
 }
+
+.navbar .navbar-brand,
+.navbar a.btn {
+  height: 76px;
+}

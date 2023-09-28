@@ -16,282 +16,1768 @@
     />
     <meta
       name="author"
-      content="Dr. Moinul Hoque"
+      content="Mohammad Mohitul Islam"
     />
     <title>Artificial Eye Care</title>
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="style/font-awesome.css"
-    />
-    <link
-      rel="stylesheet"
-      href="style/aos.css"
-    />
-    <!-- CSS file -->
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Custom CSS -->
+    <!-- Favicon -->
+    <link
+      href="img/favicon.ico"
+      rel="icon"
+    />
+
+    <!-- Google Web Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link
+      href="lib/animate/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Stylesheet -->
+    <link
+      href="css/style.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fancy Box Css -->
     <link
       rel="stylesheet"
-      href="style/style.css"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
     />
+
+    <!-- Beer Slider -->
+    <link
+      rel="stylesheet"
+      href="beer/BeerSlider.css"
+    />
+    <script src="beer/BeerSlider.js"></script>
   </head>
-  <body class="">
-    <header class="">
-      <!-- Navbar goes here -->
-      <nav
-        class="absolute z-[999] top-0 sticky flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white shadow-lg"
+  <body>
+    <header>
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
       >
-        <div class="w-10 h-10">
-          <a href="#">
-            <img
-              src="assets/images/eye_color.png"
-              alt="artificial_eye"
-            />
-          </a>
-        </div>
-
-        <!-- Hamburger Icon -->
-        <svg
-          xmlns="<http://www.w3.org/2000/svg>"
-          id="menu-button"
-          class="h-6 w-6 cursor-pointer md:hidden block"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-
         <div
-          class="hidden w-full md:flex md:items-center md:w-auto"
-          id="menu"
+          class="spinner-grow text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
         >
-          <ul
-            class="text-base text-gray-700 pt-4 md:flex md:justify-between md:pt-0"
-          >
-            <li>
-              <a
-                class="md:p-4 py-2 block hover:text-purple-400"
-                href="#"
-                >Features</a
-              >
-            </li>
-            <li>
-              <a
-                class="md:p-4 py-2 block hover:text-purple-400"
-                href="#"
-                >Pricing</a
-              >
-            </li>
-            <li class="relative parent">
-              <a
-                href="#"
-                class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2"
-              >
-                <span>Service</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-4 h-4 fill-current pt-1"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
-                  />
-                </svg>
-              </a>
-              <ul
-                class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="flex px-4 py-3 hover:bg-gray-50"
-                  >
-                    Web development
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex px-4 py-3 hover:bg-gray-50"
-                  >
-                    Web Design
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex px-4 py-3 hover:bg-gray-50"
-                  >
-                    Machine Learning
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a
-                class="md:p-4 py-2 block hover:text-purple-400"
-                href="#"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                class="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
-                href="#"
-                >Sign Up</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- Header Slider Start-->
-      <div class="carousel relative shadow-2xl bg-white">
-        <div class="carousel-inner relative overflow-hidden w-full h-[90vh]">
-          <!--Slide 1-->
-          <input
-            class="carousel-open"
-            type="radio"
-            id="carousel-1"
-            name="carousel"
-            aria-hidden="true"
-            hidden=""
-            checked="checked"
-          />
-          <div
-            class="carousel-item absolute opacity-0"
-            style="height: 90vh"
-          >
-            <div
-              class="block h-full w-full bg-indigo-500 text-white text-5xl text-center"
-            >
-              Slide 1
-            </div>
-          </div>
-          <label
-            for="carousel-3"
-            class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
-            >‹</label
-          >
-          <label
-            for="carousel-2"
-            class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
-            >›</label
-          >
-
-          <!--Slide 2-->
-          <input
-            class="carousel-open"
-            type="radio"
-            id="carousel-2"
-            name="carousel"
-            aria-hidden="true"
-            hidden=""
-          />
-          <div
-            class="carousel-item absolute opacity-0"
-            style="height: 90vh"
-          >
-            <div
-              class="block h-full w-full bg-orange-500 text-white text-5xl text-center"
-            >
-              Slide 2
-            </div>
-          </div>
-          <label
-            for="carousel-1"
-            class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
-            >‹</label
-          >
-          <label
-            for="carousel-3"
-            class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
-            >›</label
-          >
-
-          <!--Slide 3-->
-          <input
-            class="carousel-open"
-            type="radio"
-            id="carousel-3"
-            name="carousel"
-            aria-hidden="true"
-            hidden=""
-          />
-          <div
-            class="carousel-item absolute opacity-0"
-            style="height: 90vh"
-          >
-            <div
-              class="block h-full w-full bg-green-500 text-white text-5xl text-center"
-            >
-              Slide 3
-            </div>
-          </div>
-          <label
-            for="carousel-2"
-            class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
-            >‹</label
-          >
-          <label
-            for="carousel-1"
-            class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
-            >›</label
-          >
-
-          <!-- Add additional indicators for each slide-->
-          <ol class="carousel-indicators">
-            <li class="inline-block mr-3">
-              <label
-                for="carousel-1"
-                class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
-                >•</label
-              >
-            </li>
-            <li class="inline-block mr-3">
-              <label
-                for="carousel-2"
-                class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
-                >•</label
-              >
-            </li>
-            <li class="inline-block mr-3">
-              <label
-                for="carousel-3"
-                class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
-                >•</label
-              >
-            </li>
-          </ol>
+          <span class="sr-only">Loading...</span>
         </div>
       </div>
-      <!-- Header Slider End-->
-    </header>
-    <main>
-      <section>
-        <div class="px-4">
-          <div
-            class="flex justify-center items-center bg-white mx-auto max-w-2xl rounded-lg my-16 p-16"
-          >
-            <h1 class="text-2xl font-medium">
-              Responsive Navbar with TailwindCSS
-            </h1>
+      <!-- Spinner End -->
+
+      <!-- Topbar Start -->
+      <div
+        class="container-fluid bg-light p-0 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <div class="row gx-0 d-none d-lg-flex">
+          <div class="col-lg-7 px-5 text-start">
+            <div
+              class="h-100 d-inline-flex align-items-center py-3 me-4 custom_alignment"
+            >
+              <small class="text-primary me-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                  />
+                </svg>
+              </small>
+              <small>Hyderabad , Telangana</small>
+            </div>
+            <div
+              class="h-100 d-inline-flex align-items-center py-3 me-4 custom_alignment"
+            >
+              <small class="text-primary me-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                  />
+                </svg>
+              </small>
+              <small>+91 9705931841</small>
+            </div>
+            <div
+              class="h-100 d-inline-flex align-items-center py-3 me-4 custom_alignment"
+            >
+              <small class="text-primary me-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                  />
+                </svg>
+              </small>
+              <small>rkumarocularist@gmail.com</small>
+            </div>
+          </div>
+          <div class="col-lg-5 px-5 text-end">
+            <div class="h-100 d-inline-flex align-items-center">
+              <a
+                class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 320 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  /></svg
+              ></a>
+              <a
+                class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                  /></svg
+              ></a>
+              <a
+                class="btn btn-sm-square rounded-circle bg-white text-primary me-0"
+                href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  /></svg
+              ></a>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+      <!-- Topbar End -->
+
+      <!-- Navbar Start -->
+      <nav
+        class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <a
+          href="index.html"
+          class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+        >
+          <h1 class="m-0 text-primary logo">
+            <img
+              src="assets/images/eye_color.png"
+              alt="logo"
+            />
+          </h1>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler me-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarCollapse"
+        >
+          <!-- For Right Side Menu -->
+          <!-- <div class="navbar-nav ms-auto p-4 p-lg-0"></div> -->
+          <div class="navbar-nav mx-auto p-4 p-lg-0">
+            <a
+              href="index.html"
+              class="nav-item nav-link active"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="nav-item nav-link"
+              >About</a
+            >
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Services</a
+              >
+              <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                <a
+                  href="ocular-prosthesis.html"
+                  class="dropdown-item"
+                  >Opencular prosthesis</a
+                >
+                <a
+                  href="scleral-shell.html"
+                  class="dropdown-item"
+                  >Scleral shell</a
+                >
+                <a
+                  href="spectacle-prosthesis.html"
+                  class="dropdown-item"
+                  >Spectacle prosthesis</a
+                >
+                <a
+                  href="microphthalmos-treatment.html"
+                  class="dropdown-item"
+                  >Microphthalmos treatment</a
+                >
+              </div>
+            </div>
+
+            <a
+              href="gallery.html"
+              class="nav-item nav-link"
+              >Gallary</a
+            >
+            <a
+              href="contact.html"
+              class="nav-item nav-link"
+              >Contact</a
+            >
+          </div>
+          <a
+            href="contact.html"
+            class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
+            >Appointment<i class="fa fa-arrow-right ms-3"></i
+          ></a>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Header Start -->
+      <div class="container-fluid header bg-primary p-0 mb-5">
+        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
+          <div
+            class="col-lg-12 wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            <div class="owl-carousel header-carousel">
+              <div class="owl-carousel-item position-relative">
+                <img
+                  class="img-fluid"
+                  src="assets/images/eye_care_slider_2.jpg"
+                  alt=""
+                />
+                <div class="owl-carousel-text custom_slider_text">
+                  <h1 class="display-1 text-white mb-0 custom_font">
+                    RESTORING YOUR QUALITY OF LIFE WITH <br />CUSTOM-MADE OCULAR
+                    PROSTHESES
+                  </h1>
+                  <p class="custom_font_para">
+                    Regain Your Confidence with Our Prosthetic Solutions
+                  </p>
+                  <div>
+                    <a
+                      class="btn btn-primary rounded-pill py-3 px-5 mt-3"
+                      href="contact.html"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="owl-carousel-item position-relative">
+                <img
+                  class="img-fluid"
+                  src="assets/images/eye_care_slider_1.jpg"
+                  alt=""
+                />
+                <div class="owl-carousel-text custom_slider_text">
+                  <h1 class="display-1 text-white mb-0 custom_font">
+                    REDISCOVER YOUR CONFIDENCE WITH <br />OUR CUSTOM-MADE OCULAR
+                    PROSTHESES
+                  </h1>
+                  <p class="custom_font_para">at Centre for Artificial Eye</p>
+                  <div>
+                    <a
+                      class="btn btn-primary rounded-pill py-3 px-5 mt-3"
+                      href="contact.html"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header End -->
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- First Service Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 900px"
+          >
+            <p class="d-inline-block py-1 px-4 section-custom-title">
+              ARTIFICIAL EYE CLINIC INDIA
+            </p>
+            <h1>DISCOVER THE CENTRE FOR ARTIFICIAL EYE</h1>
+            <p class="d-inline-block py-1 px-4">
+              Our personalized prosthetic solutions and Support to Help You
+              Rediscover Your Confidence.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="custom_about_1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                  style="width: 200px; height: 200px"
+                  fill="#333"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M352 144c0-44.2 35.8-80 80-80s80 35.8 80 80v48c0 17.7 14.3 32 32 32s32-14.3 32-32V144C576 64.5 511.5 0 432 0S288 64.5 288 144v48H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H352V144z"
+                  />
+                </svg>
+                <div>
+                  <h2>Opening hours</h2>
+                  <p>
+                    opening hours are from Monday to Saturday, from 9:00 am to
+                    6:00 pm. We are closed on Sundays and all major holidays.
+                  </p>
+                </div>
+              </div>
+              <div class="custom_about_1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                  style="width: 100px; height: 100px"
+                  fill="#333"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1V192c0 53 43 96 96 96s96-43 96-96V71.1l-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1V192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112V265.3c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V336c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192V71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+                  />
+                </svg>
+                <div>
+                  <h2>Don't Let Eye Loss Define You</h2>
+                  <p>Regain Your Confidence with Our Prosthetic Solutions</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp doctor_img"
+              data-wow-delay="0.1s"
+            >
+              <img
+                class=""
+                src="assets/images/dr_rajkumar.png"
+                alt="doctor_img"
+              />
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="custom_about_1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                  style="width: 100px; height: 185px"
+                  fill="#333"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-96 55.2C54 332.9 0 401.3 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7c0-81-54-149.4-128-171.1V362c27.6 7.1 48 32.2 48 62v40c0 8.8-7.2 16-16 16H336c-8.8 0-16-7.2-16-16s7.2-16 16-16V424c0-17.7-14.3-32-32-32s-32 14.3-32 32v24c8.8 0 16 7.2 16 16s-7.2 16-16 16H256c-8.8 0-16-7.2-16-16V424c0-29.8 20.4-54.9 48-62V304.9c-6-.6-12.1-.9-18.3-.9H178.3c-6.2 0-12.3 .3-18.3 .9v65.4c23.1 6.9 40 28.3 40 53.7c0 30.9-25.1 56-56 56s-56-25.1-56-56c0-25.4 16.9-46.8 40-53.7V311.2zM144 448a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"
+                  />
+                </svg>
+                <div>
+                  <h2>Book a Consultation</h2>
+                  <p>Take the First Step Towards Your Prosthetic Solution</p>
+                </div>
+              </div>
+              <div class="custom_about_1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 640 512"
+                  style="width: 100px; height: 100px"
+                  fill="#333"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M175 389.4c-9.8 16-15 34.3-15 53.1c-10 3.5-20.8 5.5-32 5.5c-53 0-96-43-96-96V64C14.3 64 0 49.7 0 32S14.3 0 32 0H96h64 64c17.7 0 32 14.3 32 32s-14.3 32-32 32V309.9l-49 79.6zM96 64v96h64V64H96zM352 0H480h32c17.7 0 32 14.3 32 32s-14.3 32-32 32V214.9L629.7 406.2c6.7 10.9 10.3 23.5 10.3 36.4c0 38.3-31.1 69.4-69.4 69.4H261.4c-38.3 0-69.4-31.1-69.4-69.4c0-12.8 3.6-25.4 10.3-36.4L320 214.9V64c-17.7 0-32-14.3-32-32s14.3-32 32-32h32zm32 64V224c0 5.9-1.6 11.7-4.7 16.8L330.5 320h171l-48.8-79.2c-3.1-5-4.7-10.8-4.7-16.8V64H384z"
+                  />
+                </svg>
+                <div>
+                  <h2>Discover the Difference</h2>
+                  <p>Experience Expert Care at Centre for Artificial Eye</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consultant -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="service-item bg-light rounded h-100 p-5 custom_consult_color"
+              >
+                <h4 class="mb-3">
+                  <span class="custom_consult_num">1</span> Consultation
+                </h4>
+                <p class="mb-4">
+                  Registration, Guidance & Education with Socket Impression and
+                  Custom Painting
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="service-item bg-light rounded h-100 p-5 custom_consult_color"
+              >
+                <h4 class="mb-3">
+                  <span class="custom_consult_num">2</span> Consultation
+                </h4>
+                <p class="mb-4">
+                  Measuring, Shaping, Positioning, Checking and Adjusting the
+                  Prosthetic Eye Model
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="service-item bg-light rounded h-100 p-5 custom_consult_color"
+              >
+                <h4 class="mb-3">
+                  <span class="custom_consult_num">3</span> Consultation
+                </h4>
+                <p class="mb-4">
+                  Real-Time Sclera Painting with Accurate Blood Vessel Detailing
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="service-item bg-light rounded h-100 p-5 custom_consult_color"
+              >
+                <h4 class="mb-3">
+                  <span class="custom_consult_num">4</span> Consultation
+                </h4>
+                <p class="mb-4">
+                  Fitting, Care Instructions, and Final Questions Answered by
+                  Our Experts
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT US -->
+      <div class="container bg-primary overflow-hidden mt-5 px-lg-0">
+        <div class="container feature px-lg-0">
+          <div class="row g-0 mx-lg-0">
+            <div
+              class="col-lg-6 feature-text py-5 wow fadeIn"
+              data-wow-delay="0.1s"
+            >
+              <div class="p-lg-5 ps-lg-0 px-5">
+                <h1 class="text-white mb-4 custom_about_padding">ABOUT US</h1>
+                <div class="text-white mb-4 pb-2 custom_about_padding">
+                  <p>
+                    Centre for Artificial Eye, India’s leading centre for
+                    custom-made ocular prostheses. With over 15 years of
+                    experience, we have been committed to providing our patients
+                    with optimal cosmetic prosthetic rehabilitation following
+                    enucleation or evisceration, and orbit following
+                    exenteration.
+                  </p>
+                  <p>
+                    We specialize in a variety of services, including Ocular
+                    Prosthetics, Scleral Shell, Orbital Prosthesis
+                    (Silicone),Spectacle Mounted Ocular, Hollow Prosthesis,
+                    Microphthalmies Treatment, Management of Contracted Socket,
+                    Pressure Conformer, Innovative Conformers, Crutch Glasses.
+                  </p>
+                  <a
+                    class="btn btn-primary rounded-pill py-3 px-5 mt-3 custom_color_btn_abouts"
+                    href="about.html"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 pe-lg-0 wow fadeIn"
+              data-wow-delay="0.5s"
+              style="min-height: 400px"
+            >
+              <div class="position-relative h-100">
+                <img
+                  class="position-absolute img-fluid w-100 h-100"
+                  src="assets/about-us/ab.jpg"
+                  style="object-fit: cover"
+                  alt="ab_image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container bg-primary overflow-hidden mb-5 px-lg-0">
+        <div class="container feature px-lg-0 mt-5">
+          <div class="row g-0 mx-lg-0">
+            <div
+              class="col-lg-6 pe-lg-0 wow fadeIn"
+              data-wow-delay="0.5s"
+              style="min-height: 400px"
+            >
+              <div class="position-relative h-100">
+                <img
+                  class="position-absolute img-fluid w-100 h-100"
+                  src="assets/about-us/rajkumar-2.jpg"
+                  style="object-fit: cover"
+                  alt="ab_image"
+                />
+              </div>
+            </div>
+            <div
+              class="col-lg-6 feature-text py-5 wow fadeIn"
+              data-wow-delay="0.1s"
+            >
+              <div class="p-lg-5 ps-lg-0">
+                <h1 class="text-white mb-4 custom_about_padding">
+                  KNOW YOUR OCULARIST
+                </h1>
+                <div class="text-white mb-4 pb-2 custom_about_padding">
+                  <p>
+                    Raju Kumar is an experienced Ocularist and Anaplastologist
+                    with over 15 years of experience in the field. He has
+                    completed his long-term fellowship He has done Observership
+                    in NHS Glasgow and Vice President of the Ocularist Society
+                    of India.
+                  </p>
+
+                  <p>
+                    Kumar began his career as a consultant ocularist at LVPEI
+                    Hyderabad and later founded the ocularistry services at the
+                    Centre for Sight Hyderabad. He has served more than 5000
+                    patients with various ocular prosthetic needs. Dr. Kumar is
+                    highly regarded in his field and is a visiting faculty
+                    member at several other oculoplastic centers in India and
+                    abroad.
+                  </p>
+                  <p>
+                    With his expertise in ocular prosthetics, Dr. Kumar has
+                    helped many patients achieve a natural and comfortable look,
+                    restoring their confidence and quality of life. His
+                    dedication to his profession, commitment to excellence, and
+                    compassionate care make him a trusted and respected
+                    Ocularist in the industry.
+                  </p>
+                  <a
+                    class="btn btn-primary rounded-pill py-3 px-5 mt-3 custom_color_btn_abouts"
+                    href="about.html"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- First Service End -->
+
+      <!-- ARTIFICIAL EYE CLINIC INDIA start-->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 900px"
+          >
+            <p class="d-inline-block py-1 px-4 section-custom-title">
+              ARTIFICIAL EYE CLINIC INDIA
+            </p>
+            <h1>GET SERVICE FROM US</h1>
+          </div>
+          <div class="row g-4">
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 18rem"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/service/service_2.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ocular Prosthesis</h5>
+                  <p class="card-text">
+                    An ocular prosthesis is a specialized field that focuses on
+                    the creation and fitting of prosthetic eyes or artificial
+                    eyes. These prosthetic eyes are...
+                  </p>
+                  <a
+                    href="ocular-prosthesis.html"
+                    class="btn btn-primary"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 18rem"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/service/schlar_shell-2.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Scleral Shell</h5>
+                  <p class="card-text">
+                    The scleral shell is a type of ocular prosthesis that covers
+                    the entire sclera, the white part of the eye. It is designed
+                    to provide a more natural look to those with ...
+                  </p>
+                  <a
+                    href="scleral-shell.html"
+                    class="btn btn-primary"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 18rem"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/service/service_3-1.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Orbital Prosthesis (Silicone)</h5>
+                  <p class="card-text">
+                    An orbital prosthesis is a custom-made artificial eye
+                    designed to cover a surgically created eye socket. At the
+                    Centre for Artificial...
+                  </p>
+                  <a
+                    href="spectacle-prosthesis.html"
+                    class="btn btn-primary"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 18rem"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/service/spec.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Spectacle Mounted Ocular</h5>
+                  <p class="card-text">
+                    Centre for Artificial Eye, where we specialize in providing
+                    high-quality spectacle prosthesis services for patients with
+                    large ocular
+                  </p>
+                  <a
+                    href="spectacle-prosthesis.html"
+                    class="btn btn-primary"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-2">
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 18rem"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/service/hollow.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Hollow Prosthesis</h5>
+                  <p class="card-text">
+                    Art Eyes has developed a new technique of making Hollow
+                    Prosthesis, which isrequired where there is lot of space in
+                    side the eye cavity due to ..
+                  </p>
+                  <a
+                    href="hollow.html"
+                    class="btn btn-primary"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 18rem"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/service/mi.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Microphthalmos Treatment</h5>
+                  <p class="card-text">
+                    Congenital Anophthalmos and Microphthalmos is a rare Birth
+                    Defect. Congenital anophthalmos is a condition where the
+                    child is born ..
+                  </p>
+                  <a
+                    href="microphthalmos-treatment.html"
+                    class="btn btn-primary"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 18rem"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/service/service_6-1.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Management of contracted..</h5>
+                  <p class="card-text">
+                    We have vast experience in managing congenital disorders
+                    likeMicrophthalmos and Anophthalmos..
+                  </p>
+                  <a
+                    href="management-of-contracted-socket-pressure-conformer-innovative-conformers.html"
+                    class="btn btn-primary"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 18rem"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/service/glasses-2.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Crutch Glasses</h5>
+                  <p class="card-text">
+                    We make crutch glasses for the patients who are not able to
+                    open their eyes and for the same surgical option is not
+                    possible. Then Crutch Glasses is the..
+                  </p>
+                  <a
+                    href="crutch-glasses.html"
+                    class="btn btn-primary"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ARTIFICIAL EYE CLINIC INDIA end-->
+
+      <!-- CENTRE FOR ARTIFICIAL EYE Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 900px"
+          >
+            <p class="d-inline-block py-1 px-4 section-custom-title">
+              CENTRE FOR ARTIFICIAL EYE
+            </p>
+            <h1>BEFORE & AFTER TREATEMETS</h1>
+          </div>
+          <div class="row g-4">
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 100%"
+              >
+                <div
+                  id="compare"
+                  class="beer-slider"
+                  data-beer-label="before"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/beer/transformation1.jpg"
+                    alt="before"
+                  />
+                  <div
+                    class="beer-reveal"
+                    data-beer-label="after"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="assets/beer/transformation2.jpg"
+                      alt="after"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 100%"
+              >
+                <div
+                  id="compare-2"
+                  class="beer-slider"
+                  data-beer-label="before"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/beer/before3_1.jpg"
+                    alt="before"
+                  />
+                  <div
+                    class="beer-reveal"
+                    data-beer-label="after"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="assets/beer/before3_2.jpg"
+                      alt="after"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 100%"
+              >
+                <div
+                  id="compare-3"
+                  class="beer-slider"
+                  data-beer-label="before"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/beer/eye1_1.jpg"
+                    alt="before"
+                  />
+                  <div
+                    class="beer-reveal"
+                    data-beer-label="after"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="assets/beer/eye1_2.jpg"
+                      alt="after"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-2">
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 100%"
+              >
+                <div
+                  id="compare-4"
+                  class="beer-slider"
+                  data-beer-label="before"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/beer/eye3_1.jpg"
+                    alt="before"
+                  />
+                  <div
+                    class="beer-reveal"
+                    data-beer-label="after"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="assets/beer/eye3_2.jpg"
+                      alt="after"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 100%"
+              >
+                <div
+                  id="compare-5"
+                  class="beer-slider"
+                  data-beer-label="before"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/beer/b6.jpg"
+                    alt="before"
+                  />
+                  <div
+                    class="beer-reveal"
+                    data-beer-label="after"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="assets/beer/b6_2-1024x551.jpg"
+                      alt="after"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 100%"
+              >
+                <div
+                  id="compare-6"
+                  class="beer-slider"
+                  data-beer-label="before"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/beer/last1.jpg"
+                    alt="before"
+                  />
+                  <div
+                    class="beer-reveal"
+                    data-beer-label="after"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="assets/beer/last2.jpg"
+                      alt="after"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CENTRE FOR ARTIFICIAL EYE Start -->
+
+      <!-- Paralax start -->
+      <div class="container-fluid header bg-primary p-0 mb-5">
+        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
+          <div
+            class="col-lg-12 p-5 wow fadeIn"
+            data-wow-delay="0.1s"
+          >
+            <h1 class="display-4 text-white text-center mb-5">
+              EYE Is The Root Of All Feelings
+            </h1>
+            <div class="row g-4">
+              <div class="col-sm-4 text-center">
+                <div class="ps-4">
+                  <h2
+                    class="text-white mb-1 custom_plus_sign"
+                    data-toggle="counter-up"
+                  >
+                    1011
+                  </h2>
+                  <p class="text-light mb-0">No. Of Consultations</p>
+                </div>
+              </div>
+              <div class="col-sm-4 text-center">
+                <div class="border-start border-light ps-4">
+                  <h2
+                    class="text-white mb-1 custom_plus_sign"
+                    data-toggle="counter-up"
+                  >
+                    150
+                  </h2>
+                  <p class="text-light mb-0">Different Services</p>
+                </div>
+              </div>
+              <div class="col-sm-4 text-center">
+                <div class="border-start border-light ps-4">
+                  <h2
+                    class="text-white mb-1 custom_plus_sign"
+                    data-toggle="counter-up"
+                  >
+                    3033
+                  </h2>
+                  <p class="text-light mb-0">Happy Patients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Paralax end -->
+
+      <!-- OUR GALLERY Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 900px"
+          >
+            <p class="d-inline-block py-1 px-4 section-custom-title">
+              CENTRE FOR ARTIFICIAL EYE
+            </p>
+            <h1>OUR GALLERY</h1>
+          </div>
+          <div class="row g-4 custom_first_div">
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="custom_card"
+                style="width: 100%"
+              >
+                <a
+                  href="assets/gallary/m-2.jpg"
+                  data-fancybox="gallery"
+                  class="custom_gallary_img"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/gallary/m-2.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="custom_card"
+                style="width: 100%"
+              >
+                <a
+                  href="assets/gallary/glasses-3.jpg"
+                  data-fancybox="gallery"
+                  class="custom_gallary_img"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/gallary/glasses-3.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="custom_card"
+                style="width: 100%"
+              >
+                <a
+                  href="assets/gallary/schlar_shell-3.jpg"
+                  data-fancybox="gallery"
+                  class="custom_gallary_img"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/gallary/schlar_shell-3.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 mt-2 custom_first_div">
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="custom_card"
+                style="width: 100%"
+              >
+                <a
+                  href="assets/gallary/service_1-1.jpg"
+                  data-fancybox="gallery"
+                  class="custom_gallary_img"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/gallary/service_1-1.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="custom_card"
+                style="width: 100%"
+              >
+                <a
+                  href="assets/gallary/WhatsApp-Image-2023-05-09-at-14.27.57.jpg"
+                  data-fancybox="gallery"
+                  class="custom_gallary_img"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/gallary/WhatsApp-Image-2023-05-09-at-14.27.57.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="custom_card"
+                style="width: 100%"
+              >
+                <a
+                  href="assets/gallary/gal.jpg"
+                  data-fancybox="gallery"
+                  class="custom_gallary_img"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/gallary/gal.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 mt-2 custom_first_div">
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="custom_card"
+                style="width: 100%"
+              >
+                <a
+                  href="assets/gallary/WhatsApp-Image-2023-05-09-at-14.25.00.jpg"
+                  data-fancybox="gallery"
+                  class="custom_gallary_img"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/gallary/WhatsApp-Image-2023-05-09-at-14.25.00.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="custom_card"
+                style="width: 100%"
+              >
+                <a
+                  href="assets/gallary/prostheticey.jpg"
+                  data-fancybox="gallery"
+                  class="custom_gallary_img"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/gallary/prostheticey.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="custom_card"
+                style="width: 100%"
+              >
+                <a
+                  href="assets/gallary/about_us01-1-3.jpg"
+                  data-fancybox="gallery"
+                  class="custom_gallary_img"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/gallary/about_us01-1-3.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 mt-2 custom_first_div">
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="custom_card"
+                style="width: 100%"
+              >
+                <a
+                  href="assets/gallary/ga4.jpg"
+                  data-fancybox="gallery"
+                  class="custom_gallary_img"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/gallary/ga4.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 100%"
+              >
+                <a
+                  href="assets/gallary/service_6-1.jpg"
+                  data-fancybox="gallery"
+                  class="custom_gallary_img"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/gallary/service_6-1.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="custom_card"
+                style="width: 100%"
+              >
+                <a
+                  href="assets/gallary/123.jpg"
+                  data-fancybox="gallery"
+                  class="custom_gallary_img"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/gallary/123.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- OUR GALLERY End -->
+
+      <!-- OUR TALENTED OCULARIST'S Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 900px"
+          >
+            <p class="d-inline-block py-1 px-4 section-custom-title">
+              ARTIFICIAL EYE CLINIC INDIA
+            </p>
+            <h1>OUR TALENTED OCULARIST'S</h1>
+          </div>
+          <div class="row g-4">
+            <div
+              class="col-lg-6 col-md-6 wow fadeInUp custom_doc_hover"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card custom_card"
+                style="width: 100%; height: 100%"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/doc/rajkumar1-4-130x150.jpg"
+                  alt="Card image cap"
+                />
+
+                <!-- Txt -->
+                <div class="custom_doc_overly">
+                  <div class="custom_content_doc">
+                    <h2>Raju kumar</h2>
+                    <p>
+                      Raju kumar M.opt, Flvpei Fellow NHS Glasgow Vice president
+                      Ocularist Society India Ocularist & Anaplastologist Long
+                      term Fellow Lvpei Hyderbad Ex HOD ocularistry dept Lvpei
+                      Hyderbad Consultant Ocularist Centre for sight Hyderabad
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 col-md-6 wow fadeInUp custom_doc_hover"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card custom_card"
+                style="width: 100%; height: 100%"
+              >
+                <img
+                  class="card-img-top custom_doc_img"
+                  src="assets/doc/team2-1-135x150.jpg"
+                  alt="Card image cap"
+                />
+
+                <!-- Txt -->
+                <div class="custom_doc_overly">
+                  <div class="custom_content_doc">
+                    <h2>Kanika Saha</h2>
+                    <p>
+                      Contact lens specialist & Ocularist M.opto ,Flvpei Ex
+                      consultant Optometrist Lvpei Ex consultant Optometrist
+                      Centre for sight Exp : 15 years of Experience in the field
+                      of optometry & Ocularistry
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- OUR TALENTED OCULARIST'S End -->
+
+      <!-- WHAT OUR CLIENTS SAY start-->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <p class="d-inline-block py-1 px-4 section-custom-title">
+              ARTIFICIAL EYE CLINIC INDIA
+            </p>
+            <h1>WHAT OUR CLIENTS SAY</h1>
+          </div>
+          <div
+            class="owl-carousel testimonial-carousel wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="testimonial-item text-center">
+              <img
+                class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+                src="https://mui.com/static/images/avatar/3.jpg"
+                style="width: 100px; height: 100px"
+              />
+              <!-- data-pid="b5167179c03e50ec942cb" -->
+              <div class="testimonial-text rounded text-center p-4">
+                <p>
+                  The care he is taken is very good, and his work is very great
+                  and Thank you raju sir
+                </p>
+                <h5 class="mb-1">Saivenkat gur</h5>
+                <!-- <span class="fst-italic">Profession</span> -->
+              </div>
+            </div>
+            <div class="testimonial-item text-center">
+              <img
+                class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+                src="https://mui.com/static/images/avatar/2.jpg"
+                style="width: 100px; height: 100px"
+              />
+              <div class="testimonial-text rounded text-center p-4">
+                <p>Very good doctor</p>
+                <h5 class="mb-1">Mohammed</h5>
+                <!-- <span class="fst-italic">Profession</span> -->
+              </div>
+            </div>
+            <div class="testimonial-item text-center">
+              <img
+                class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+                src="https://mui.com/static/images/avatar/1.jpg"
+                style="width: 100px; height: 100px"
+              />
+              <div class="testimonial-text rounded text-center p-4">
+                <p>
+                  The senior Ocularist, Mr Raju Kumar is an absolute expert in
+                  the field of making artificial eyes, and their work is a
+                  result of their years of experience and dedication to their
+                  craft. Highly recommended.
+                </p>
+                <h5 class="mb-1">Shashank painu</h5>
+                <!-- <span class="fst-italic">Profession</span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- WHAT OUR CLIENTS SAY end-->
+
+      <!-- Footer Start -->
+      <div
+        class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-light mb-4 logo">
+                <img
+                  src="assets/images/eye_color.png"
+                  alt="logo"
+                />
+              </h5>
+              <p>
+                Ocular Prosthesis Service Centre For Sight Hyderabad Best
+                Ocularistry Service In India,Ocular Prosthesis, Artificial Eye
+              </p>
+              <div
+                class="position-relative mx-auto"
+                style="max-width: 400px"
+              ></div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-light mb-4">Services</h5>
+              <a
+                class="btn btn-link"
+                href=""
+                >Ocular Prosthesis
+              </a>
+              <a
+                class="btn btn-link"
+                href=""
+              >
+                Scleral Shell</a
+              >
+              <a
+                class="btn btn-link"
+                href=""
+              >
+                Spectacle Prosthesis</a
+              >
+              <a
+                class="btn btn-link"
+                href=""
+              >
+                Microphthalmos Treatment</a
+              >
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-light mb-4">Quick Links</h5>
+              <a
+                class="btn btn-link"
+                href=""
+                >Home
+              </a>
+              <a
+                class="btn btn-link"
+                href=""
+                >About
+              </a>
+              <a
+                class="btn btn-link"
+                href=""
+              >
+                Services
+              </a>
+              <a
+                class="btn btn-link"
+                href=""
+                >Gallery</a
+              >
+              <a
+                class="btn btn-link"
+                href=""
+              >
+                Contact</a
+              >
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-light mb-4">Address</h5>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>Centre for sight Eye
+                Hospital ,2nd floor, Ashoka capitol Building, Road no 02 Banjara
+                hills Hyderabad 500034
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>+91 9705931841, +91
+                8885417216
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>rkumarocularist@gmail.com
+              </p>
+              <div class="d-flex pt-2">
+                <a
+                  class="btn btn-outline-light btn-social rounded-circle"
+                  href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light btn-social rounded-circle"
+                  href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light btn-social rounded-circle"
+                  href=""
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light btn-social rounded-circle"
+                  href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy;
+                <a
+                  class="border-bottom"
+                  href="#"
+                  >Artificial Eye Care</a
+                >, All Right Reserved.
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                Designed By
+                <a
+                  class="border-bottom"
+                  href="https://github.com/mohit838"
+                  >Mohitul</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
     </main>
 
-    <!-- Js Script -->
-    <script src="js/aos.js"></script>
-    <script src="js/script.js"></script>
+    <!-- Back to Top -->
+    <button
+      id="backToTopBtn"
+      title="Back to Top"
+    >
+      &#8593;
+    </button>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/extra.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core
+      defer
+    ></script>
+    <div class="elfsight-app-d7dd7fe7-41f1-4940-bf87-f577b841dcb9"></div>
   </body>
 </html>

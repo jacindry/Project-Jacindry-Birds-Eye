@@ -655,23 +655,27 @@
   padding-left: 5px;
 }
 
-.custom_first_div {
-  margin-top: 50px;
-}
-
+/* Image Gallary */
 .custom_gallary_img > img {
   width: 100%;
   height: 100%;
-  padding: 10px;
-}
-
-.custom_first_div > div > a {
-  width: 500px;
-  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 
 .custom_first_div > div {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
+}
+
+/* Set a fixed height for the card containers */
+.card {
+  height: 300px; /* Adjust the height as needed */
+  overflow: hidden; /* Hide any overflow if the image is too tall */
+}
+
+/* Optional: To add some spacing between the cards */
+.card + .card {
+  margin-left: 1rem;
 }

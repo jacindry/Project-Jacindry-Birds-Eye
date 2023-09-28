@@ -76,6 +76,13 @@
       href="css/style.css"
       rel="stylesheet"
     />
+
+    <!-- Beer Slider -->
+    <link
+      rel="stylesheet"
+      href="beer/BeerSlider.css"
+    />
+    <script src="beer/BeerSlider.js"></script>
   </head>
   <body>
     <header>
@@ -930,27 +937,27 @@
                 class="card"
                 style="width: 100%"
               >
-                <img
-                  class="card-img-top"
-                  src="assets/service/service_2.jpg"
-                  alt="Card image cap"
-                />
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="0.1s"
-            >
-              <div
-                class="card image-fluid"
-                style="width: 100%"
-              >
-                <img
-                  class="card-img-top"
-                  src="assets/service/service_2.jpg"
-                  alt="Card image cap"
-                />
+                <div
+                  id="compare"
+                  class="beer-slider"
+                  data-beer-label="before"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/beer/transformation1.jpg"
+                    alt="before"
+                  />
+                  <div
+                    class="beer-reveal"
+                    data-beer-label="after"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="assets/beer/transformation2.jpg"
+                      alt="after"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -962,11 +969,157 @@
                 class="card"
                 style="width: 100%"
               >
-                <img
-                  class="card-img-top"
-                  src="assets/service/service_2.jpg"
-                  alt="Card image cap"
-                />
+                <div
+                  id="compare-2"
+                  class="beer-slider"
+                  data-beer-label="before"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/beer/before3_1.jpg"
+                    alt="before"
+                  />
+                  <div
+                    class="beer-reveal"
+                    data-beer-label="after"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="assets/beer/before3_2.jpg"
+                      alt="after"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 100%"
+              >
+                <div
+                  id="compare-3"
+                  class="beer-slider"
+                  data-beer-label="before"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/beer/eye1_1.jpg"
+                    alt="before"
+                  />
+                  <div
+                    class="beer-reveal"
+                    data-beer-label="after"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="assets/beer/eye1_2.jpg"
+                      alt="after"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-2">
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 100%"
+              >
+                <div
+                  id="compare-4"
+                  class="beer-slider"
+                  data-beer-label="before"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/beer/eye3_1.jpg"
+                    alt="before"
+                  />
+                  <div
+                    class="beer-reveal"
+                    data-beer-label="after"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="assets/beer/eye3_2.jpg"
+                      alt="after"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 100%"
+              >
+                <div
+                  id="compare-5"
+                  class="beer-slider"
+                  data-beer-label="before"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/beer/b6.jpg"
+                    alt="before"
+                  />
+                  <div
+                    class="beer-reveal"
+                    data-beer-label="after"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="assets/beer/b6_2-1024x551.jpg"
+                      alt="after"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="card"
+                style="width: 100%"
+              >
+                <div
+                  id="compare-6"
+                  class="beer-slider"
+                  data-beer-label="before"
+                >
+                  <img
+                    class="card-img-top"
+                    src="assets/beer/last1.jpg"
+                    alt="before"
+                  />
+                  <div
+                    class="beer-reveal"
+                    data-beer-label="after"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="assets/beer/last2.jpg"
+                      alt="after"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -996,6 +1149,7 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
+    <script src="js/extra.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

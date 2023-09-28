@@ -679,3 +679,61 @@
 .card + .card {
   margin-left: 1rem;
 }
+
+/* Our Doctor */
+.custom_doc_overly {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  background: #000;
+  cursor: pointer;
+}
+.custom_content_doc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.custom_content_doc > h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.custom_doc_hover:hover .custom_doc_overly {
+  opacity: 0.8;
+}
+
+.card-img-top,
+.custom_doc_img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 360px) {
+  .custom_content_doc {
+    font-size: 14px;
+  }
+
+  .custom_content_doc > h2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom_content_doc {
+    font-size: 14px;
+  }
+
+  .custom_content_doc > h2 {
+    font-size: 14px;
+  }
+}

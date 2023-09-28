@@ -1,8 +1,10 @@
-/********** Template CSS **********/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+
 :root {
   --primary: #0463fa;
   --light: #eff5ff;
   --dark: #1b2c51;
+  --number-font: 'Bungee Outline', cursive;
 }
 
 .fw-medium {
@@ -606,4 +608,30 @@
 .navbar .navbar-brand,
 .navbar a.btn {
   height: 76px;
+}
+
+.custom_consult_color {
+  background-color: #8e54f3 !important;
+  color: white;
+  text-align: center;
+}
+.custom_consult_color > h4 {
+  color: white;
+}
+
+.custom_consult_color:hover {
+  background-color: #723eca !important;
+}
+
+.custom_consult_num {
+  font-family: var(--number-font);
+  font-size: 50px;
+}
+
+.custom_color_btn_abouts {
+  background-color: #1b2c51;
+}
+
+.custom_about_padding {
+  padding-left: 20px;
 }

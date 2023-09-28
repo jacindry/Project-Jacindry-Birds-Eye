@@ -737,3 +737,42 @@
     font-size: 14px;
   }
 }
+
+/* Back to top */
+
+/* styles.css */
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  /* padding: 10px; */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#backToTopBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Show the button when the user scrolls down 20px from the top of the document */
+@media screen and (min-height: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  #backToTopBtn {
+    display: none;
+  }
+}

@@ -670,13 +670,13 @@
 }
 
 /* Set a fixed height for the card containers */
-.card {
+.custom_card {
   height: 300px; /* Adjust the height as needed */
   overflow: hidden; /* Hide any overflow if the image is too tall */
 }
 
 /* Optional: To add some spacing between the cards */
-.card + .card {
+.custom_card + .custom_card {
   margin-left: 1rem;
 }
 

@@ -304,13 +304,13 @@
 
 .team-item .team-text {
   position: relative;
-  height: 100px;
+  height: 200px;
   transition: 0.5s;
 }
 
 .team-item:hover .team-text {
   margin-top: -60px;
-  height: 160px;
+  height: 200px;
 }
 
 .team-item .team-text .team-social {
